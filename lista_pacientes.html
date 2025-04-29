@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pacientes - VetClinic</title>
+    <link rel="stylesheet" href="estilos/esilos_pacientes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Botón de regreso -->
+    <a href="menu.html" class="btn-regresar">
+        <i class="bi bi-arrow-left"></i> Menú Principal
+    </a>
+
+    <div class="contenedor-tabla">
+        <h1>Pacientes</h1>
+        
+        <!-- Tabla de pacientes -->
+        <table class="tabla-pacientes">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Especie</th>
+                    <th>Raza</th>
+                    <th>Dueño</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Max</td>
+                    <td>Perro</td>
+                    <td>Labrador</td>
+                    <td>María González</td>
+                </tr>
+                <!-- Más filas según sea necesario -->
+            </tbody>
+        </table>
+
+        <!-- Tabla detallada -->
+        <table class="tabla-detalle">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Especie</th>
+                    <th>Raza</th>
+                    <th>Edad</th>
+                    <th>Color</th>
+                    <th>Sexo</th>
+                    <th>Dueño</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Luna</td>
+                    <td>Gato</td>
+                    <td>Siamés</td>
+                    <td>3 años</td>
+                    <td>Blanco</td>
+                    <td>Hembra</td>
+                    <td>Carlos Mendoza</td>
+                    <td>555-1234</td>
+                </tr>
+                <!-- Más filas según sea necesario -->
+            </tbody>
+        </table>
+
+        <!-- Paginación -->
+        <div class="paginacion">
+            <button class="btn-pagina">Anterior</button>
+            <div class="numeros-pagina">
+                <span>1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <span>...</span>
+                <a href="#">10</a>
+            </div>
+            <button class="btn-pagina">Siguiente <i class="bi bi-arrow-right"></i></button>
+        </div>
+    </div>
+</body>
+</html>

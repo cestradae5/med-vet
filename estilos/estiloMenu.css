@@ -1,0 +1,102 @@
+/* Efecto hover para las tarjetas */
+.shadow-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.shadow-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* Personalización del logo principal */
+.main-logo {
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el logo inferior */
+.footer-logo {
+    max-width: 250px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 0.85;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    .main-logo {
+        font-size: 2.5rem;
+    }
+    
+    .footer-logo {
+        max-width: 200px;
+    }
+}
+
+.logo {
+    width: 150px; /* Ajusta según tamaño de tu logo */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Opcional: Para mantener responsive */
+@media (max-width: 480px) {
+    .logo {
+        width: 120px;
+    }
+}
+
+
+/* Estilos para los iconos dentro de los botones */
+.icon-btn {
+    font-size: 3rem;
+    color: #0d6efd;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover para las tarjetas */
+.btn-card {
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.btn-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.btn-card:hover .icon-btn {
+    color: #0b5ed7;
+    transform: scale(1.1);
+}
+
+/* Estilo logo principal */
+.logo-icon {
+    font-size: 5rem;
+    color: #0d6efd;
+}
+
+/* Ajustes para los botones */
+.btn-primary {
+    padding: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .icon-btn {
+        font-size: 2.5rem;
+    }
+    
+    .logo-icon {
+        font-size: 3.5rem;
+    }
+    
+    .btn-primary {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pacientes - VetClinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilosPacientes.css">
+</head>
+<body>
+    <!-- Botón de regreso -->
+    <a href="menu.html" class="btn-regresar">
+        <i class="bi bi-arrow-left"></i> Menú Principal
+    </a>
+
+    <div class="contenedor-formulario">
+        <h1 class="titulo-formulario">Registrar paciente</h1>
+        
+        <form class="formulario-paciente">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="grupo-formulario">
+                        <label>Nombre de la mascota</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grupo-formulario">
+                        <label>Especie</label>
+                        <select class="form-select">
+                            <option>Perro</option>
+                            <option>Gato</option>
+                            <option>Ave</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="grupo-formulario">
+                        <label>Raza</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grupo-formulario">
+                        <label>Edad</label>
+                        <input type="number" class="form-control" min="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="grupo-formulario">
+                        <label>Color de pelaje</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grupo-formulario">
+                        <label>Sexo</label>
+                        <select class="form-select">
+                            <option>Macho</option>
+                            <option>Hembra</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grupo-formulario">
+                <label>Estado de salud</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="grupo-formulario">
+                        <label>Nombre del dueño</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="grupo-formulario">
+                        <label>Teléfono</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grupo-botones">
+                <button type="submit" class="btn-registrar">Registrar paciente</button>
+                <a href="lista_pacientes.html" class="btn-ver-pacientes">Ver Pacientes</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</body>
+</html>

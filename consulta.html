@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria - CONSULTA</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="estilos/estilos_consulta.css">
+</head>
+<body class="bg-light">
+     <!-- Botón de regreso -->
+     <a href="menu.html" class="btn-regresar">
+        <i class="bi bi-arrow-left"></i> Menú Principal
+    </a>
+    <div class="container py-5">
+        <h1 class="text-center mb-4 text-primary">Consulta Veterinaria</h1>
+        
+        <!-- Formulario de Cita -->
+        <form id="form-cita" class="bg-white p-4 rounded shadow">
+            <!-- Sección Dueño -->
+            <fieldset class="mb-4">
+                <legend class="h5 text-secondary">📋 Datos del Propietario</legend>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nombre-dueno" class="form-label">Nombre completo <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nombre-dueno" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefono" class="form-label">Teléfono <span class="text-danger">*</span></label>
+                        <input type="tel" class="form-control" id="telefono" pattern="[0-9]{9}" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Sección Mascota -->
+            <fieldset class="mb-4">
+                <legend class="h5 text-secondary">🐾 Datos de la Mascota</legend>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="nombre-mascota" class="form-label">Nombre mascota <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="nombre-mascota" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="tipo-animal" class="form-label">Especie <span class="text-danger">*</span></label>
+                        <select class="form-select" id="tipo-animal" required>
+                            <option value="">Seleccionar...</option>
+                            <option>Perro</option>
+                            <option>Gato</option>
+                            <option>Ave</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="raza" class="form-label">Raza</label>
+                        <input type="text" class="form-control" id="raza">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="edad" class="form-label">Edad</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="edad">
+                            <span class="input-group-text">años</span>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Sección Consulta -->
+            <fieldset class="mb-4">
+                <legend class="h5 text-secondary">🩺 Detalles de la Consulta</legend>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="tipo-cita" class="form-label">Tipo de cita <span class="text-danger">*</span></label>
+                        <select class="form-select" id="tipo-cita" required>
+                            <option value="">Seleccionar...</option>
+                            <option>Consulta general</option>
+                            <option>Vacunación</option>
+                            <option>Urgencia</option>
+                            <option>Cirugía</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="fecha-hora" class="form-label">Fecha y hora <span class="text-danger">*</span></label>
+                        <input type="datetime-local" class="form-control" id="fecha-hora" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="sintomas" class="form-label">Síntomas/Motivo</label>
+                        <textarea class="form-control" id="sintomas" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="diagnostico" class="form-label">Diagnóstico</label>
+                        <textarea class="form-control" id="diagnostico" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="tratamiento" class="form-label">Tratamiento</label>
+                        <textarea class="form-control" id="tratamiento" rows="3"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Botones de Acción -->
+            <div class="d-grid gap-3 d-md-flex justify-content-md-end mt-4">
+                <!-- Espacio para funcionalidad JavaScript -->
+                <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+                <button type="submit" class="btn btn-primary">Imprimir consulta</button>
+                <button type="button" class="btn btn-success" id="ver-citas">Ver Citas</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Espacio para JavaScript futuro -->
+    <!-- <script src="app.js"></script> -->
+</body>
+</html>
